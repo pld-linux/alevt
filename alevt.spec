@@ -3,14 +3,14 @@ Summary(pl):	Dekoder przegl±darka i teletekstu i dla bttv
 Summary(de):	Videotext/Teletext
 Name:		alevt
 Version:	1.5.1
-Release:	1
+Release: 2
 License:	GNU
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
 Source0:	http://user.exit.de/froese/%{name}/%{name}-%{version}.tar.gz
 URL:		http://user.exit.de/froese/
 BuildRequires:	XFree86-devel
-BuildRequires:	libpng-devel
+BuildRequires:	libpng >= 1.0.8
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
