@@ -3,7 +3,7 @@ Summary(pl):	Dekoder Teletekstu
 Summary(de):	Videotext/Teletext
 Name:		alevt
 Version:	1.6.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.goron.de/~froese/%{name}/%{name}-%{version}.tar.gz
