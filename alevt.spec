@@ -2,7 +2,7 @@ Summary:	Teletext decoder and browser for the bttv based card
 Summary(pl):	Dekoder przegl±darka i teletekstu i dla bttv
 Summary(de):	Videotext/Teletext
 Name:		alevt
-Version:	1.5.2
+Version:	1.6.0
 Release:	1
 License:	GNU
 Group:		X11/Applications
