@@ -1,0 +1,11 @@
+diff -Nur alevt-1.6.0.orig/alevt-date.c alevt-1.6.0/alevt-date.c
+--- alevt-1.6.0.orig/alevt-date.c	Sat Sep 16 23:34:42 2000
++++ alevt-1.6.0/alevt-date.c	Sat Jul 21 21:21:24 2001
+@@ -3,6 +3,7 @@
+ #include <stdlib.h>
+ #include <unistd.h>
+ #include <signal.h>
++#include <time.h>
+ 
+ #include "os.h"
+ #include "vt.h"
