@@ -35,7 +35,7 @@ X11 Videotextdecoder für den bttv Treiber.
 %setup -q -n alevt-%{version}
 
 %build
-%{__make} OPT="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS}"
+%{__make} OPT="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
