@@ -2,8 +2,8 @@ Summary:	Teletext decoder and browser for the bttv based card
 Summary(pl):	Dekoder przegl±darka i teletekstu i dla bttv
 Summary(de):	Videotext/Teletext
 Name:		alevt
-Version:	1.5.1
-Release:	2
+Version:	1.5.2
+Release:	1
 License:	GNU
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
@@ -33,7 +33,9 @@ X11 Videotextdecoder für den bttv Treiber.
 %setup -q -n alevt-%{version}
 
 %build
-%{__make} OPT="$RPM_OPT_FLAGS" FONT=latin-2
+#%{__make} OPT="$RPM_OPT_FLAGS" FONT=latin-2
+
+%{__make} OPT="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
