@@ -9,6 +9,7 @@ Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://user.exit.de/froese/%{name}/%{name}-%{version}.tar.gz
+Patch0:		%{name}-time-include.patch
 URL:		http://user.exit.de/froese/
 BuildRequires:	XFree86-devel
 BuildRequires:	libpng >= 1.0.8
@@ -33,6 +34,8 @@ X11 Videotextdecoder für den bttv Treiber.
 
 %prep
 %setup -q -n alevt-%{version}
+
+%patch0 -p1
 
 %build
 %{__make} OPT="%{rpmcflags}"
