@@ -1,5 +1,5 @@
 Summary:	Teletext decoder and browser for the bttv based card
-Summary(pl):	Dekoder przegl±darka i teletekstu i dla bttv
+Summary(pl):	Dekoder Teletekstu
 Summary(de):	Videotext/Teletext
 Name:		alevt
 Version:	1.6.0
@@ -25,7 +25,8 @@ searching, built-in manual, and more. There's also a program to get
 the time from teletext and one to capture teletext pages from scripts.
 
 %description -l pl
-Dekoder przegl±darka i teletekstu i dla bttv.
+Dekoder oraz przegl±darka teletekstu. Pakiet ten umo¿liwia przegl±danie
+stron telegazety.
 
 %description -l de
 X11 Videotextdecoder für den bttv Treiber.
