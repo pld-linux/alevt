@@ -3,7 +3,7 @@ Summary(pl):	Dekoder Teletekstu
 Summary(de):	Videotext/Teletext
 Name:		alevt
 Version:	1.6.0
-Release:	1
+Release:	2
 License:	GNU
 Group:		X11/Applications
 Group(de):	X11/Applikationen
