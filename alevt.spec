@@ -32,7 +32,7 @@ przegl±danie stron telegazety.
 X11 Videotextdecoder für den bttv Treiber.
 
 %prep
-%setup -q -n alevt-%{version}
+%setup -q
 %patch0 -p1
 %patch1 -p1
 %ifarch amd64
@@ -40,14 +40,15 @@ X11 Videotextdecoder für den bttv Treiber.
 %endif
 
 %build
-%{__make} OPT="%{rpmcflags}"
+%{__make} \
+	 OPT="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 install alevt alevt-date alevt-cap ${RPM_BUILD_ROOT}%{_bindir}
-install {alevt-cap.1,alevt-date.1,alevt.1x} $RPM_BUILD_ROOT%{_mandir}/man1
+install alevt-cap.1 alevt-date.1 alevt.1x $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
