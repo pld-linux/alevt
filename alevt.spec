@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.goron.de/~froese/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	df6e241c6e2c6505c95d50cde0e1bc73
 Patch0:		%{name}-time-include.patch
 Patch1:		%{name}-time.h.patch
 URL:		http://www.goron.de/~froese/
