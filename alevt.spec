@@ -7,7 +7,7 @@ Release:	1
 License:	GNU
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
-Source:		http://user.exit.de/froese/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://user.exit.de/froese/%{name}/%{name}-%{version}.tar.gz
 URL:		http://user.exit.de/froese/
 BuildRequires:	XFree86-devel
 BuildRequires:	libpng-devel
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 AleVT is a teletext/videotext decoder and browser for the bttv driver
 (/dev/vbi) and X11. It features multiple windows, a page cache, regexp
-searching, built-in manual, and more. There's also a program to get the time
-from teletext and one to capture teletext pages from scripts.
+searching, built-in manual, and more. There's also a program to get
+the time from teletext and one to capture teletext pages from scripts.
 
 %description -l pl
 Dekoder przegl±darka i teletekstu i dla bttv.
