@@ -12,8 +12,7 @@ URL:		http://user.exit.de/froese/
 BuildRequires:	XFree86-devel
 BuildRequires:	libpng-devel
 BuildRequires:	zlib-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
-
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
@@ -29,7 +28,6 @@ Dekoder przegl±darka i teletekstu i dla bttv.
 
 %description -l de
 X11 Videotextdecoder für den bttv Treiber.
-
 
 %prep
 %setup -q -n alevt-%{version}
