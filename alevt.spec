@@ -26,8 +26,8 @@ searching, built-in manual, and more. There's also a program to get
 the time from teletext and one to capture teletext pages from scripts.
 
 %description -l pl
-Dekoder oraz przegl±darka teletekstu. Pakiet ten umo¿liwia przegl±danie
-stron telegazety.
+Dekoder oraz przegl±darka teletekstu. Pakiet ten umo¿liwia
+przegl±danie stron telegazety.
 
 %description -l de
 X11 Videotextdecoder für den bttv Treiber.
