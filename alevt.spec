@@ -2,14 +2,14 @@ Summary:	Teletext decoder and browser for the bttv based card
 Summary(pl):	Dekoder Teletekstu
 Summary(de):	Videotext/Teletext
 Name:		alevt
-Version:	1.6.0
-Release:	2
+Version:	1.6.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://lecker.essen.de/~froese/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://www.goron.de/~froese/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-time-include.patch
 Patch1:		%{name}-time.h.patch
-URL:		http://lecker.essen.de/~froese/
+URL:		http://www.goron.de/~froese/
 BuildRequires:	XFree86-devel
 BuildRequires:	libpng-devel >= 1.0.8
 BuildRequires:	zlib-devel
@@ -46,13 +46,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install alevt alevt-date alevt-cap ${RPM_BUILD_ROOT}%{_bindir}
 install {alevt-cap.1,alevt-date.1,alevt.1x} $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf README CHANGELOG
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README CHANGELOG
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
