@@ -10,6 +10,7 @@ Source0:	http://www.goron.de/~froese/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	df6e241c6e2c6505c95d50cde0e1bc73
 Patch0:		%{name}-time-include.patch
 Patch1:		%{name}-time.h.patch
+Patch2:		%{name}-amd64.patch
 URL:		http://www.goron.de/~froese/
 BuildRequires:	XFree86-devel
 BuildRequires:	libpng-devel >= 1.0.8
@@ -34,6 +35,9 @@ X11 Videotextdecoder für den bttv Treiber.
 %setup -q -n alevt-%{version}
 %patch0 -p1
 %patch1 -p1
+%ifarch amd64
+%patch2 -p1
+%endif
 
 %build
 %{__make} OPT="%{rpmcflags}"
