@@ -4,7 +4,7 @@ Summary(de):	Videotext/Teletext
 Name:		alevt
 Version:	1.6.0
 Release:	2
-License:	GNU
+License:	GPL
 Group:		X11/Applications
 Source0:	http://lecker.essen.de/~froese/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-time-include.patch
