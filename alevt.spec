@@ -8,10 +8,10 @@ License:	GNU
 Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
-Source0:	http://user.exit.de/froese/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://lecker.essen.de/~froese/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-time-include.patch
 Patch1:		%{name}-time.h.patch
-URL:		http://user.exit.de/froese/
+URL:		http://lecker.essen.de/~froese/
 BuildRequires:	XFree86-devel
 BuildRequires:	libpng-devel >= 1.0.8
 BuildRequires:	zlib-devel
