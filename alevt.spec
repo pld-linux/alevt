@@ -10,7 +10,7 @@ Group(pl): X11/Aplikacje
 Source: http://user.exit.de/froese/%{name}/%{name}-%{version}.tar.gz
 URL: http://user.exit.de/froese
 BuildRequires:  XFree86-devel
-BuildRequires:	libpng
+BuildRequires:	libpng-devel
 BuildRequires:	zlib-devel
 BuildRoot:      /tmp/%{name}-%{version}-root
 
