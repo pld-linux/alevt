@@ -3,7 +3,7 @@ Summary(pl):	Dekoder przegl±darka i teletekstu i dla bttv
 Summary(de):	Videotext/Teletext
 Name:		alevt
 Version:	1.5.1
-Release: 2
+Release:	2
 License:	GNU
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
