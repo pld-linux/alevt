@@ -15,8 +15,6 @@ BuildRequires:	libpng-devel >= 1.0.8
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 AleVT is a teletext/videotext decoder and browser for the bttv driver
