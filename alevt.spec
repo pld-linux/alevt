@@ -6,6 +6,7 @@ Version:	1.6.0
 Release:	1
 License:	GNU
 Group:		X11/Applications
+Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://user.exit.de/froese/%{name}/%{name}-%{version}.tar.gz
 URL:		http://user.exit.de/froese/
@@ -33,19 +34,16 @@ X11 Videotextdecoder für den bttv Treiber.
 %setup -q -n alevt-%{version}
 
 %build
-#%{__make} OPT="$RPM_OPT_FLAGS" FONT=latin-2
-
-%{__make} OPT="$RPM_OPT_FLAGS"
+%{__make} OPT="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
-install -s {alevt,alevt-date,alevt-cap} ${RPM_BUILD_ROOT}%{_bindir}
+
+install alevt alevt-date alevt-cap ${RPM_BUILD_ROOT}%{_bindir}
 install {alevt-cap.1,alevt-date.1,alevt.1x} $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	README CHANGELOG
+gzip -9nf README CHANGELOG
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,11 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-
-%attr(755,root,root) %{_bindir}/alevt
-%attr(755,root,root) %{_bindir}/alevt-date
-%attr(755,root,root) %{_bindir}/alevt-cap
-
-%{_mandir}/man1/alevt-cap.1.*
-%{_mandir}/man1/alevt-date.1.*
-%{_mandir}/man1/alevt.1x.*
+%attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
