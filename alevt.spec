@@ -1,6 +1,6 @@
 Summary:	Teletext decoder and browser for the bttv based card
-Summary(pl):	Dekoder Teletekstu
 Summary(de):	Videotext/Teletext
+Summary(pl):	Dekoder Teletekstu
 Name:		alevt
 Version:	1.6.1
 Release:	3
@@ -16,7 +16,6 @@ BuildRequires:	XFree86-devel
 BuildRequires:	libpng-devel >= 1.0.8
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 AleVT is a teletext/videotext decoder and browser for the bttv driver
@@ -35,7 +34,7 @@ X11 Videotextdecoder für den bttv Treiber.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%ifarch amd64
+%if "%{_lib}" == "lib64"
 %patch2 -p1
 %endif
 
