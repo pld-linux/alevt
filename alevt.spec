@@ -8,6 +8,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://www.goron.de/~froese/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	df6e241c6e2c6505c95d50cde0e1bc73
+Source1:	%{name}.desktop
 Patch0:		%{name}-time-include.patch
 Patch1:		%{name}-time.h.patch
 Patch2:		%{name}-amd64.patch
@@ -40,14 +41,17 @@ X11 Videotextdecoder für den bttv Treiber.
 
 %build
 %{__make} \
-	 OPT="%{rpmcflags}"
+	CC="%{__cc}" \
+	OPT="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_desktopdir},%{_pixmapsdir}}
 
-install alevt alevt-date alevt-cap ${RPM_BUILD_ROOT}%{_bindir}
+install alevt alevt-date alevt-cap $RPM_BUILD_ROOT%{_bindir}
 install alevt-cap.1 alevt-date.1 alevt.1x $RPM_BUILD_ROOT%{_mandir}/man1
+install contrib/icon48x48.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.xpm
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,3 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README CHANGELOG
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
+%{_pixmapsdir}/%{name}.xpm
+%{_desktopdir}/%{name}.desktop
