@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=AleVT
+Comment=Teletext decoder and browser
+Comment[pl]=Dekoder oraz przeglądarka teletekstu
+Exec=alevt
+Icon=alevt.xpm
+Terminal=false
+Type=Application
+Categories=Video;TV;
+# vi: encoding=utf-8
