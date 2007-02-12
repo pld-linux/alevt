@@ -1,6 +1,6 @@
 Summary:	Teletext decoder and browser for the bttv based card
-Summary(de):	Videotext/Teletext
-Summary(pl):	Dekoder Teletekstu
+Summary(de.UTF-8):   Videotext/Teletext
+Summary(pl.UTF-8):   Dekoder Teletekstu
 Name:		alevt
 Version:	1.6.1
 Release:	3
@@ -24,12 +24,12 @@ AleVT is a teletext/videotext decoder and browser for the bttv driver
 searching, built-in manual, and more. There's also a program to get
 the time from teletext and one to capture teletext pages from scripts.
 
-%description -l pl
-Dekoder oraz przegl±darka teletekstu. Pakiet ten umo¿liwia
-przegl±danie stron telegazety.
+%description -l pl.UTF-8
+Dekoder oraz przeglÄ…darka teletekstu. Pakiet ten umoÅ¼liwia
+przeglÄ…danie stron telegazety.
 
-%description -l de
-X11 Videotextdecoder für den bttv Treiber.
+%description -l de.UTF-8
+X11 Videotextdecoder fÃ¼r den bttv Treiber.
 
 %prep
 %setup -q
