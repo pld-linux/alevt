@@ -1,6 +1,6 @@
 Summary:	Teletext decoder and browser for the bttv based card
-Summary(de.UTF-8):   Videotext/Teletext
-Summary(pl.UTF-8):   Dekoder Teletekstu
+Summary(de.UTF-8):	Videotext/Teletext
+Summary(pl.UTF-8):	Dekoder Teletekstu
 Name:		alevt
 Version:	1.6.1
 Release:	3
