@@ -12,8 +12,9 @@ Source1:	%{name}.desktop
 Patch0:		%{name}-time-include.patch
 Patch1:		%{name}-time.h.patch
 Patch2:		%{name}-amd64.patch
+Patch3:		%{name}-compile.patch
 URL:		http://www.goron.de/~froese/
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	libpng-devel >= 1.0.8
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,6 +39,7 @@ X11 Videotextdecoder für den bttv Treiber.
 %if "%{_lib}" == "lib64"
 %patch2 -p1
 %endif
+%patch3 -p1
 
 %build
 %{__make} \
