@@ -14,8 +14,8 @@ Patch1:		%{name}-time.h.patch
 Patch2:		%{name}-amd64.patch
 Patch3:		%{name}-compile.patch
 URL:		http://www.goron.de/~froese/
-BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	libpng-devel >= 1.0.8
+BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
