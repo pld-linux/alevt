@@ -11,7 +11,6 @@ Source0:	http://www.goron.de/~froese/%{name}/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-time-include.patch
 Patch1:		%{name}-time.h.patch
-Patch2:		%{name}-amd64.patch
 URL:		http://www.goron.de/~froese/
 BuildRequires:	libpng-devel >= 1.0.8
 BuildRequires:	xorg-lib-libX11-devel
@@ -35,9 +34,6 @@ X11 Videotextdecoder für den bttv Treiber.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%if "%{_lib}" == "lib64"
-%patch2 -p1
-%endif
 
 %build
 %{__make} \
