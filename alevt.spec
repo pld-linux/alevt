@@ -2,17 +2,16 @@ Summary:	Teletext decoder and browser for the bttv based card
 Summary(de.UTF-8):	Videotext/Teletext
 Summary(pl.UTF-8):	Dekoder Teletekstu
 Name:		alevt
-Version:	1.6.1
-Release:	3
+Version:	1.6.2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.goron.de/~froese/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	df6e241c6e2c6505c95d50cde0e1bc73
+# Source0-md5:	e5a32776e7eff48ec48449b3c3c1cc23
 Source1:	%{name}.desktop
 Patch0:		%{name}-time-include.patch
 Patch1:		%{name}-time.h.patch
 Patch2:		%{name}-amd64.patch
-Patch3:		%{name}-compile.patch
 URL:		http://www.goron.de/~froese/
 BuildRequires:	libpng-devel >= 1.0.8
 BuildRequires:	xorg-lib-libX11-devel
@@ -39,7 +38,6 @@ X11 Videotextdecoder für den bttv Treiber.
 %if "%{_lib}" == "lib64"
 %patch2 -p1
 %endif
-%patch3 -p1
 
 %build
 %{__make} \
