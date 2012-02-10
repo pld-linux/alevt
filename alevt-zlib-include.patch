@@ -1,0 +1,10 @@
+--- alevt-1.6.2//exp-gfx.c~	2007-12-03 03:56:06.000000000 +0100
++++ alevt-1.6.2//exp-gfx.c	2012-02-10 20:32:05.132342656 +0100
+@@ -158,6 +158,7 @@
+ #ifdef WITH_PNG
+ 
+ #include <png.h>
++#include <zlib.h>
+ static int png_open(struct export *e);
+ static int png_option(struct export *e, int opt, char *arg);
+ static int png_output(struct export *e, char *name, struct fmt_page *pg);
